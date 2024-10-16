@@ -56,6 +56,14 @@ namespace SAIHS_CS_2_1
             }
         }
 
-    
+        private void textBox6_Enter(object sender, EventArgs e)
+        {
+            textBox6.Clear();
+        }
+
+        private void textBox7_Enter(object sender, EventArgs e)
+        {
+            textBox7.Clear();
+        }
     }
 }

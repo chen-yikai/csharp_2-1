@@ -166,6 +166,7 @@
             this.textBox6.Size = new System.Drawing.Size(113, 36);
             this.textBox6.TabIndex = 10;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter);
             // 
             // label8
             // 
@@ -225,6 +226,7 @@
             this.textBox7.Size = new System.Drawing.Size(113, 36);
             this.textBox7.TabIndex = 15;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBox7.Enter += new System.EventHandler(this.textBox7_Enter);
             // 
             // button1
             // 

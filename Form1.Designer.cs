@@ -46,6 +46,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -54,7 +55,7 @@
             this.textBox1.Location = new System.Drawing.Point(241, 56);
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 36);
+            this.textBox1.Size = new System.Drawing.Size(253, 36);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -83,7 +84,7 @@
             this.textBox2.Location = new System.Drawing.Point(241, 121);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(100, 36);
+            this.textBox2.Size = new System.Drawing.Size(253, 36);
             this.textBox2.TabIndex = 2;
             // 
             // label3
@@ -102,7 +103,7 @@
             this.textBox3.Location = new System.Drawing.Point(241, 180);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 36);
+            this.textBox3.Size = new System.Drawing.Size(253, 36);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "123123";
             // 
@@ -122,7 +123,7 @@
             this.textBox4.Location = new System.Drawing.Point(241, 243);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 65);
+            this.textBox4.Size = new System.Drawing.Size(253, 65);
             this.textBox4.TabIndex = 6;
             // 
             // label5
@@ -142,8 +143,8 @@
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox5.Size = new System.Drawing.Size(146, 86);
-            this.textBox5.TabIndex = 8;
+            this.textBox5.Size = new System.Drawing.Size(253, 86);
+            this.textBox5.TabIndex = 0;
             this.textBox5.WordWrap = false;
             // 
             // label6
@@ -161,7 +162,7 @@
             this.textBox6.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox6.Location = new System.Drawing.Point(74, 473);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 36);
+            this.textBox6.Size = new System.Drawing.Size(113, 36);
             this.textBox6.TabIndex = 10;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
@@ -220,15 +221,27 @@
             this.textBox7.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox7.Location = new System.Drawing.Point(74, 535);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 36);
+            this.textBox7.Size = new System.Drawing.Size(113, 36);
             this.textBox7.TabIndex = 15;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Location = new System.Drawing.Point(559, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 142);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "清除";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 652);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -274,6 +287,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button1;
     }
 }
 

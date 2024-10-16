@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,18 +18,44 @@ namespace SAIHS_CS_2_1
             InitializeComponent();
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+       private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            double inch = Convert.ToDouble(textBox6.Text);
-            double cm = inch * 2.54;
-            label8.Text = cm.ToString();
+            try
+            {
+                double inch = Convert.ToDouble(textBox6.Text);
+                double cm = inch * 2.54;
+                label8.Text = cm.ToString();
+            }
+            catch {
+                label8.Text = "0";    
+            }
+            
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            double cm = Convert.ToDouble(textBox7.Text);
-            double inch = cm / 2.54;
-            label11.Text = inch.ToString();
+            try {
+                double cm = Convert.ToDouble(textBox7.Text);
+                double inch = cm / 2.54;
+                label11.Text = inch.ToString();
+            }
+            catch
+            {
+                label11.Text = "0";
+            }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             TextBox[] clearBox = { textBox1, textBox2,textBox4,textBox5,textBox6,textBox7 };
+            foreach (TextBox i in clearBox)
+            {
+                i.Clear();
+            }
+         
+            textBox4.Focus();
+        }
+
+    
     }
 }

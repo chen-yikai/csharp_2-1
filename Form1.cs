@@ -24,10 +24,11 @@ namespace SAIHS_CS_2_1
             {
                 double inch = Convert.ToDouble(textBox6.Text);
                 double cm = inch * 2.54;
-                label8.Text = cm.ToString();
+                label8.Text = cm.ToString("f2");
             }
             catch {
-                label8.Text = "0";    
+                label8.Text = "0";
+                textBox6.Clear();
             }
             
         }
@@ -37,23 +38,22 @@ namespace SAIHS_CS_2_1
             try {
                 double cm = Convert.ToDouble(textBox7.Text);
                 double inch = cm / 2.54;
-                label11.Text = inch.ToString();
+                label11.Text = inch.ToString("f2");
             }
             catch
             {
                 label11.Text = "0";
+                textBox7.Clear();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-             TextBox[] clearBox = { textBox1, textBox2,textBox4,textBox5,textBox6,textBox7 };
+            TextBox[] clearBox = { textBox1, textBox2,textBox4,textBox5,textBox6,textBox7 };
             foreach (TextBox i in clearBox)
             {
                 i.Clear();
             }
-         
-            textBox4.Focus();
         }
 
     
